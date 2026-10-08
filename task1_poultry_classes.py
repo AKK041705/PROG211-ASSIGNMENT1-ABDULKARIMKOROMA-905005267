@@ -30,16 +30,28 @@ class Farm:
         self.farm_name = farm_name
         self.location = location
 
+    def display_info(self):
+        print("\n----------farm information----------")
+        print(f"Farm name : {self.farm_name}")
+        print(f"Location : {self.location}")
+
+    def inspect(self, bird):
+        print(f"\n{self.farm_name} is inspecting bird {bird.bird_id}...")
+        if bird.health_status == "Sick":
+            bird.update_health("Under treatment")
+        if not bird.vaccinated:
+            bird.vaccinate()
+
 
 # poultry objects
 bird1 = Poultry("P001", "Broiler", 6, "Healthy", False)
 bird2 = Poultry("P002", "Layer", 20, "Healthy", True)
 bird3 = Poultry("P003", "Kuroiler", 12, "Sick", False)
 
+# farm object
+farm1 = Farm("Kafallah women poultry farm", "Makeni, Sierra Leone")
+
+farm1.display_info()
 bird1.display_info()
 bird2.display_info()
 bird3.display_info()
-
-bird3.update_health("Under treatment")
-bird1.vaccinate()
-bird1.display_info()

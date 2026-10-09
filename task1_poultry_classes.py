@@ -54,6 +54,12 @@ bird3 = Poultry("P003", "Kuroiler", 12, "Sick", False)
 farm1 = Farm("Kafallah women poultry farm", "Makeni, Sierra Leone", 500)
 
 farm1.display_info()
+
+# farm inspects the birds
+farm1.inspect(bird1)
+farm1.inspect(bird2)
+farm1.inspect(bird3)
+
 bird1.display_info()
 bird2.display_info()
 bird3.display_info()

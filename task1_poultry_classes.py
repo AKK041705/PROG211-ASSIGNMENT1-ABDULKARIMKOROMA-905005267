@@ -26,14 +26,16 @@ class Poultry:
 
 # farm class
 class Farm:
-    def __init__(self, farm_name, location):
+    def __init__(self, farm_name, location, capacity):
         self.farm_name = farm_name
         self.location = location
+        self.capacity = capacity
 
     def display_info(self):
         print("\n----------farm information----------")
         print(f"Farm name : {self.farm_name}")
         print(f"Location : {self.location}")
+        print(f"Capacity : {self.capacity} birds")
 
     def inspect(self, bird):
         print(f"\n{self.farm_name} is inspecting bird {bird.bird_id}...")
@@ -49,7 +51,7 @@ bird2 = Poultry("P002", "Layer", 20, "Healthy", True)
 bird3 = Poultry("P003", "Kuroiler", 12, "Sick", False)
 
 # farm object
-farm1 = Farm("Kafallah women poultry farm", "Makeni, Sierra Leone")
+farm1 = Farm("Kafallah women poultry farm", "Makeni, Sierra Leone", 500)
 
 farm1.display_info()
 bird1.display_info()

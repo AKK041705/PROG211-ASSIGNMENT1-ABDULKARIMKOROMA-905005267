@@ -95,7 +95,17 @@ python poultry_farm_system.py
 ```
 
 ## Example Usage (shortened)
-
+## Screenshots
+**Figure 1: Farm information and inspection (Task 1)**
+![alt text](image.png)
+**Figure 2: Adding records to the list (Task 2)**
+![alt text](image-1.png)
+**Figure 3: Menus and input validation (Task 2 and DPG)**
+![alt text](image-2.png)
+**Figure 4: Displaying all records (Task 2)**
+![alt text](image-3.png)
+**Figure 5: Class method and static methods (Task 3)**
+![alt text](image-4.png)
 ```
 ----------farm information----------
 Farm name : Kafallah women poultry farm
